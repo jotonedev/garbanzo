@@ -1,0 +1,123 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+    padding: 3rem 1rem;
+    max-width: 1240px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Generic classes */
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.end-0 {
+    right: 0!important;
+}
+
+.top-0 {
+    top: 0!important;
+}
+
+.bot-0 {
+    bottom: 0!important;
+}
+
+.mr-2 {
+    margin-right: 1.5rem!important;
+}
+
+.mt-2 {
+    margin-top: 1.5rem!important;
+}
+
+/* Object classes */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    margin: 1rem;
+
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 40%;
+    max-height: 16rem;
+
+    box-sizing: border-box;
+    position: relative!important;
+}
+
+
+.card--body {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.card--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card--status--dot {
+    height: 1em;
+    width: 1em;
+    transform: none;
+}
+
+.card--status--bar {
+    max-width: 500px;
+    max-height: 4rem;
+    height: 2.3rem;
+    width: 100%;
+
+    margin: 1rem 0;
+
+    display: flex!important;
+    gap: 5px;
+}
+
+.card--status--bar--tick {
+    border-radius: 0.6rem;
+    flex-grow: 1!important;
+
+    width: 0.8rem;
+    max-width: 1rem;
+    height: 100%;
+}
+
+.card--status--bar--tick--fail {
+    background-color: #dc0000;
+}
+
+.card--status--bar--tick--warning {
+    background-color: #f1be00;
+}
+
+.card--status--bar--tick--successful {
+    background-color: #00a400;
+}
+
+.card--status--bar--tick--unchecked {
+    background-color: dimgrey;
+}
+
+.card--footer {
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-top: 1px solid lightgray;
+    background-color: rgba(211, 211, 211, 0.18);
+}
+
+.card--footer--text {
+    font-size: 0.8em;
+    color: rgba(102, 109, 117, 0.8) !important;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="style.css">
+    <script defer="defer" src="main.js"></script>
+</head>
+<body>
+<h1>Server healthcheck page</h1>
+<p>Here you can see the status of the services running on the server.</p>
+<div class="container">
+    <noscript>To visualize the data, you need to enable Javascript</noscript>
+    <template>
+        <div class="card">
+            <div class="card--body">
+                <div class="card--title">
+                    <h3>Service 01</h3>
+                    <div class="end-0 card--status--dot">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card--status--bar">
+                    <template><div class="card--status--bar--tick card--status--bar--tick--unchecked"></div></template>
+                </div>
+            </div>
+            <div class="card--footer">
+                <small class="card--footer--text">Last check 18 minutes ago</small>
+            </div>
+        </div>
+    </template>
+</div>
+</body>
+</html>
