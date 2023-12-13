@@ -8,7 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = {extras = ["standard"], version = "^0.105.0"}
-
+orjson = "^3.9.10"
+aiodns = "^3.1.1"
+ipaddress = "^1.0.23"
 
 [build-system]
 requires = ["poetry-core"]
