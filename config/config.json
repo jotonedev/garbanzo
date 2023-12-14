@@ -1,0 +1,28 @@
+{
+  "DEBUG": "true",
+  "PORT": "3000",
+  "SERVICES": [
+    {
+      "name": "http service",
+      "url": "http://example.com",
+      "port": 443,
+      "interval": 180,
+      "service_type": "http",
+      "max_retries": 3,
+      "retry_interval": 10,
+      "timeout": 10,
+      "max_previous_states": 10
+    },
+    {
+      "name": "tcp service",
+      "url": "example.com",
+      "port": 80,
+      "interval": 180,
+      "service_type": "http",
+      "max_retries": 3,
+      "retry_interval": 10,
+      "timeout": 10,
+      "max_previous_states": 10
+    }
+  ]
+}
