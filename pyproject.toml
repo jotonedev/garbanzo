@@ -11,6 +11,7 @@ fastapi = {extras = ["standard"], version = "^0.105.0"}
 orjson = "^3.9.10"
 anyio = "^3.7"
 ipaddress = "^1.0.23"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 
 [tool.poetry.group.http.dependencies]
 httpx = {extras = ["brotli", "http2"], version = "^0.25.2"}
