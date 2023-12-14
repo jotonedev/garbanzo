@@ -11,6 +11,11 @@ fetch('/api')
         const cardTemplate = document.querySelector('.container template');
         const tickTemplate = cardTemplate.content.querySelector('.card--status--bar template');
 
+        // Check if data is valid
+        if (!data || !Array.isArray(data)) {
+            throw new Error('Invalid data!');
+        }
+
         // For each service in the data
         data.forEach(service => {
             // if currentStatus is not present set it as undefined
